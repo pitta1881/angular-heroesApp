@@ -12,11 +12,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../material/material.module';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 import { ImagenPipe } from './pipes/imagen.pipe';
+import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 
 
 
 @NgModule({
-  declarations: [AgregarComponent, BuscarComponent, HeroeComponent, HomeComponent, ListadoComponent, HeroeTarjetaComponent, ImagenPipe],
+  declarations: [AgregarComponent, BuscarComponent, HeroeComponent, HomeComponent, ListadoComponent, HeroeTarjetaComponent, ImagenPipe, ConfirmarComponent],
   imports: [
     CommonModule,
     HeroesRoutingModule,

@@ -23,4 +23,16 @@ export class HeroesService {
   getSugerencias(termino:string){
     return this.http.get<Heroe[]>(`${this.apiBase}/heroes?q=${termino}&_limit=6`)
   }
+
+  createHeroe(heroe:Heroe){
+    return this.http.post<Heroe>(`${this.apiBase}/heroes`,heroe)
+  }
+
+  updateHeroe(heroe:Heroe){
+    return this.http.put<Heroe>(`${this.apiBase}/heroes/${heroe.id}`,heroe)
+  }
+
+  deleteHeroe(id:string){
+    return this.http.delete<{}>(`${this.apiBase}/heroes/${id}`)
+  }
 }
