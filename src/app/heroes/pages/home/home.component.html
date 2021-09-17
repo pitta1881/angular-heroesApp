@@ -33,7 +33,9 @@
         (click)="sidenav.toggle()">
             <mat-icon>menu</mat-icon>
         </button>
-        <button mat-button>
+        <span>Hola {{ auth.usuario }}</span>
+        <button mat-button
+                (click)="logout()">
             Logout
         </button>
     </mat-toolbar>
